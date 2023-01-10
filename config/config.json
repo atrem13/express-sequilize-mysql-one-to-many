@@ -2,7 +2,7 @@
   "development": {
     "username": "root",
     "password": null,
-    "database": "database_development",
+    "database": "express_sequelize_mysql_one_to_many",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
