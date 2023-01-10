@@ -35,4 +35,10 @@ Object.keys(db).forEach(modelName => {
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;
 
+db.tutorials.hasMany(db.comments, { as: "comments" });
+db.comments.belongsTo(db.tutorials, {
+  foreignKey: "tutorial_id",
+  as: "tutorial",
+});
+
 module.exports = db;
